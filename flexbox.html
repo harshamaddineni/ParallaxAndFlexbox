@@ -1,0 +1,49 @@
+<style>
+	.container-1{
+		display: flex;
+		align-items: flex-start;/*starts from top*/
+		/*
+			align-items:flex-end;
+			align-items:flex-center;
+			align-items:flex-strech;(default one)
+		*/
+		flex-direction: column;
+	}
+	.container-1 div
+	{
+		border:1px #ccc solid;
+		padding:10px;
+	}
+	.box-1
+	{
+		flex:2;
+		order:2; /* which box has to come first. setting the order of boxes*/
+	}
+	.box-2
+	{
+		flex:1; /* changes column width*/
+		order:1;
+	}
+	.box-3
+	{
+		flex:1;
+		order:3;
+	}
+</style>
+
+<div class="container-1">
+<div class="box-1">
+	<h3>Box one</h3>
+	<p>box one paragraph</p>
+</div>
+
+<div class="box-2">
+	<h3>Box two</h3>
+	<p>box two paragraph</p>
+</div>
+
+<div class="box-3">
+	<h3>Box three</h3>
+	<p>box three paragraph</p>
+</div>
+</div>

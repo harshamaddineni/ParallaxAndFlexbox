@@ -1,0 +1,90 @@
+body,html{
+	height:100%;
+	margin:1;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	line-height: 2em;
+}
+
+.pimg1,.pimg2,.pimg3
+{
+	position: relative;
+	opacity: 0.80;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+/* change to scroll to remove parallax*/
+	background-attachment: fixed;
+}
+
+.pimg1
+{
+	background-image: url('Images/image1.jpeg');
+	min-height: 100%;
+}
+
+.pimg2
+{
+	background-image: url('Images/image2.jpeg');
+	min-height:400px;
+}
+
+.pimg3
+{
+	background-image: url('Images/image3.jpeg');
+	min-height: 400px;
+}
+
+.ptext
+{
+
+}
+.section
+{
+	text-align: center;
+	padding:30px 80px;
+}
+.section-light
+{
+background-color: #f4f4f5;
+color:#666;
+}
+
+.section-dark
+{
+background-color:#283e34;
+color:#d333;
+}
+
+.ptext
+{
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color:#000;
+	font-size: 16px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border
+{
+	background-color:#111;
+	color:white;
+	padding:20px;
+}
+
+.ptext .border.trans
+{
+	background-color: transparent;
+}
+
+@media(max-width: 568px) {
+	.pimg1,.pimg2,.pimg3
+	{
+		background-attachment: scroll;
+	}
+}
